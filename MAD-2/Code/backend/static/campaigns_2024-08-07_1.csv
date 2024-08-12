@@ -1,0 +1,2 @@
+id,name,description,goals,start_date,end_date,budget,is_private,is_flagged,sponsor_id,total_ad_count
+1,hiring,we hire software developers,some goals,2024-08-07,2024-08-08,5000,0,0,1,1

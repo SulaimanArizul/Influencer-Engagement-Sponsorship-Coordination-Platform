@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #14a800;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Analytics Report</h1>
+        <p>Dear {{sponsor_name}},</p>
+        <p>We are pleased to provide you with the latest analytics report for your ad campaigns.</p>
+
+        <h2>Budget Overview</h2>
+        <p><strong>Total Budget Used:</strong> {{total_budget_used}}</p>
+        <p><strong>Remaining Budget:</strong> {{remaining_budget}}</p>
+
+        <h2>Campaigns</h2>
+        {{campaigns}}
+
+        <h2>Ad Requests</h2>
+        {{ad_requests}}
+
+        <div class="footer">
+            <p>Thank you for using our ad platform. If you have any questions, feel free to contact us.</p>
+            <p>&copy; {{current_year}} Ad Platform, Inc.</p>
+        </div>
+    </div>
+</body>
+
+</html>
